@@ -1,0 +1,67 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", serif;
+  
+}
+.advice-no {
+  font-size: 1em;
+  color:hsl(150, 100%, 66%);
+}
+.advice {
+  font-size:2em;
+  color:hsl(193, 38%, 86%);
+}
+.card {
+  background-color: hsl(217, 19%, 24%);
+  width:40%;
+  height:fit-content;
+  padding:2em;
+  margin:10% auto;
+  text-align: center;
+  border-radius: 1em;
+}
+.divider > img {
+  height:1em;
+  width:100%;
+}
+.dice > img {
+  width: 50%; 
+}
+.dice {
+  width: 50px; /* Set desired width */
+  height: 50px; /* Set desired height */
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%; /* Makes the wrapper circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  margin:auto;
+  left:50%;
+  transform: translateX(-50%);
+}
+.loading {
+  width:100px;
+}
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.advice-no, .advice, .divider {
+  margin-bottom:1em;
+}
+@media screen and (max-width:375px) {
+  .card {
+    width:80%;
+    margin:30% auto;
+  }
+}
